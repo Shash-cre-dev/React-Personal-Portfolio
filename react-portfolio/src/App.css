@@ -4,7 +4,9 @@
 /*----------------------------------*/
 
 /* --------------------------------- */
+
 /* CSS VARIABLES */
+
 :root{
   /* colors */
   --primary-color: hsl(165, 60%, 40%);
@@ -51,6 +53,62 @@
   --small-font-size: 15px;
   --smaller-font-size: 14px;
   --tiny-font-size: 13px;
+
+  /* SHADOW */
+  --shadow: 5px 5px rgb(255 255 255 / 10%);
+
+  /* transition */
+  --transition: cubic-bezier(0.3, 0, 0.3, 1); 
+}
+/* --------------------------------- */
+
+/* --------------------------------- */
+
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+button, input, body{
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+h1, h2, h3{
+  color: var(--title-color);
+  font-weight: 700;
+}
+ 
+ul{
+  list-style: none;
+}
+
+p{
+  line-height: 1.7;
+}
+
+a{
+  text-decoration: none;
+}
+
+input, textarea, button{
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button{
+  cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+}
 /* --------------------------------- */
