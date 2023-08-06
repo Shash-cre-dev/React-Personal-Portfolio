@@ -8,18 +8,19 @@ import './home.css';
 const Home = () => {
     return (
         <section className='home' id='home'>
-            <div className='home__container container'>
-                <p className='home__subtitle text-cs'>
-                    Hello, <span>My Name Is</span>
-                </p>
+            <div className="home__wrapper">
+                <div className='home__container container'>
+                    <p className='home__subtitle text-cs'>
+                        Hello, <span>My Name Is</span>
+                    </p>
 
-                <h1 className='home__title text-cs'>
-                    <span>SHASHANK </span>K
-                </h1>
+                    <h1 className='home__title text-cs'>
+                        <span>SHASHANK </span>K
+                    </h1>
 
-                <p className='home__job'>
-                    <span className='text-cs'>I Am</span> <strong>Web Developer</strong>
-                </p>
+                    <p className='home__job'>
+                        <span className='text-cs'>I Am</span> <strong>Web Developer</strong>
+                    </p>
 
                 <div className='home__img-wrapper'>
                     <div className='home__banner'>
@@ -72,7 +73,8 @@ const Home = () => {
                     <a href='' className='btn text-cs'>Download CV</a>
                     <a href='' className='hero__link text-cs'>My Skills</a>
                 </div>
-            </div>  
+             </div>
+            </div> 
         </section>
     )
 };
