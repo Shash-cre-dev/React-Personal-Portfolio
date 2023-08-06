@@ -17,23 +17,23 @@
   --container-color: hsl(217, 18%, 14%);
   --border-color: hsl(210, 2%, 65%);
 
-  --first-gradient: linear-gradient{
+  --first-gradient: linear-gradient(
     0deg, 
     var(--bg-color-alt) 0%,
     var(--bg-color) 100%
-  };
+  );
 
-  --second-gradient: linear-gradient{
+  --second-gradient: linear-gradient(
     180deg, 
     var(--bg-color-alt) 0%,
     var(--bg-color) 100%
-  };
+  );
 
-  --third-gradient: linear-gradient{
+  --third-gradient: linear-gradient(
     180deg, 
     var(--bg-color) 0%,
     var(--bg-color) 100%
-  };
+  );
 
 
   /* TYPOGRAPHY */
@@ -71,7 +71,9 @@
   box-sizing: border-box;
 }
 
-button, input, body{
+button, 
+input, 
+body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
@@ -85,7 +87,7 @@ h1, h2, h3{
   color: var(--title-color);
   font-weight: 700;
 }
- 
+
 ul{
   list-style: none;
 }
@@ -98,7 +100,9 @@ a{
   text-decoration: none;
 }
 
-input, textarea, button{
+input, 
+textarea, 
+button{
   border: none;
   outline: none;
   background: transparent;
@@ -112,3 +116,65 @@ img{
   max-width: 100%;
 }
 /* --------------------------------- */
+
+/* --------------------------------- */
+
+/* REUSABLE CSS CLASSES */
+
+.container{
+  max-width: 1300px;
+  padding-inline: 12px;
+  margin-inline: auto;
+}
+
+.text-cs{
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn,
+.hero__link{
+  color: var(--title-color);
+  font-size: var(--tiny-font-size);
+  font-weight: 700;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.btn{
+  border: 2px solid var(--border-color);
+  padding-inline: 40px;
+  border-radius: 56px;
+  box-shadow: var(--shadow);
+}
+
+.btn::before{
+  content:'';
+  position: absolute;
+  inset: 2px;
+  background-color: var(--primary-color);
+  border-radius: inherit;
+  transform: scale(0.3);
+  filter: blur(10px);
+  opacity: 0;
+  transition: all 0.7s var(--transistion); 
+  z-index: -1;
+}
+
+.btn:hover::before{
+  transform:scale(1);
+  filter: blur(0);
+  opacity: 1;
+}
+
+ .shape{
+  position: absolute;
+  filter: invert(1);
+  opacity: 0.6;
+ }
+
+
+/* --------------------------------- */
+ 
