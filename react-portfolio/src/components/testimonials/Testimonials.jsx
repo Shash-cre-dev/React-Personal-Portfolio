@@ -18,7 +18,7 @@ import './testimonials.css'
 const Testimonials = () => {
     return (
         <section className="testimonials section" id="testimonials">
-            <h2 className="section__title">Testimonials</h2>
+            <h2 className="section__title text-cs">Testimonials</h2>
             <p className="section__subtitle">
                 My <span>Customers Review</span>
             </p>
