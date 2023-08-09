@@ -6,7 +6,8 @@ import './header.css';
 import { useEffect } from "react";
 import { Link } from "react-scroll";
 import { animateScroll } from "react-scroll";
-
+import shapeOne from '../../assets/shape-1.png';
+ 
 const getStorageTheme = () => {
     let theme = 'light-theme'
     if(localStorage.getItem('theme')){
@@ -96,6 +97,10 @@ const Header = () => {
                         <FaBehance />
                     </a>
                 </div>
+                </div>
+
+                <div className="section__deco deco__left header__deco">
+                    <img src={shapeOne} alt="" className="shape" />
                 </div>
             </div>
 
