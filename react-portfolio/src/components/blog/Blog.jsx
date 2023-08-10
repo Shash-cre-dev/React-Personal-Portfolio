@@ -70,6 +70,10 @@ const Blog = () => {
             <div className="section__deco deco__right">
                 <img src={shapeOne} alt="" className="shape" />
             </div>
+
+            <div className="section__bg-wrapper">
+                <span className="bg__title">Blogs</span>
+            </div>
         </section>
     )
 }
